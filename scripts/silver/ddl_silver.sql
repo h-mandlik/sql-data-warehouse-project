@@ -1,11 +1,24 @@
 /*
-Database Definition: Silver Schema Tables
+===============================================================================
+Database Schema: Silver Layer Table Definitions
+===============================================================================
 Purpose:
-This script establishes the table structure within the 'silver' schema.
-Any existing tables with matching names will be dropped and recreated.
-Use this to refresh the schema definition of your silver layer tables.
-*/
+Initializes the Silver layer schema by creating core data tables.
+Existing tables will be dropped and recreated to ensure a clean schema definition.
 
+Key Actions:
+- Drops any existing tables in the silver schema
+- Creates new tables with current DDL specifications
+- Establishes proper data structures for transformed data
+
+Usage:
+Execute to refresh the entire silver layer table structure.
+WARNING: This will permanently delete all existing silver layer data.
+
+Implementation:
+Run this script during deployment or schema migration procedures.
+===============================================================================
+*/
 
 IF OBJECT_ID('silver.crm_cust_info', 'U') IS NOT NULL
     DROP TABLE silver.crm_cust_info;
