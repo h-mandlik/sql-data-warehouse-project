@@ -47,8 +47,6 @@ This repository showcases a **comprehensive data warehouse solution** built on S
 - **SQL Server** - Core database engine
 - **SSIS/SSDT** - ETL development and deployment
 - **T-SQL** - Advanced query development
-- **PowerBI/Tableau** - Visualization and reporting
-- **Azure Data Factory** (Optional) - Cloud orchestration
 
 ## 📋 **Implementation Highlights**
 - **Incremental data loading** strategies
